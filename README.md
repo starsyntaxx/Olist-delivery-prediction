@@ -99,7 +99,7 @@ project-root/
 
 ## How to Run the Project
 1. Clone repository
-git clone [GitHub Repo] https://github.com/your-username/repo-name.git
+git clone [GitHub Repo] https://github.com/starsyntaxx/Olist-delivery-prediction.git
 cd repo-name
 2. Create environment
 python -m venv venv
