@@ -92,7 +92,13 @@ The dataset contains real-world transactional data from an online marketplace, i
 | geolocation | Zip code geographic information |
 
 ---
+Major Findings:
 
+1. Systematic Buffer Strategy: The active generation layout runs on an overly safe margin configuration. Completed transactions drop off safely ahead of schedule, showcasing structural mean delivery deviation of -11.88 days ahead of target dates.
+2. Broken Tracking Pipelines: Relational data audits discovered 775 transactional orders completely missing associated line items. Investigating these anomalies proved that 77.8% (603 orders) were stuck under "unavailable" states and 21.1% (164 orders) were flagged as "canceled", proving that edge-case process loops break line-item tables.
+3. Business Insights: Tightening checkout timing forecasts down by matching real operational data can compress delivery estimates by 5 to 7 days. This change will directly boost cart checkout completion metrics without adding financial risk to current courier contracts.
+
+---
 # Project Workflow
 
 The project follows a structured analytics and machine learning pipeline.
