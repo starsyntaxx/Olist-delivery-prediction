@@ -262,6 +262,35 @@ The project analyzed:
 - Seller delivery performance  
 - Geographic seller distribution  
 
+# Aggregation Workflow
+geolocation
+    ↓
+clean geolocation lookup
+    ↓
+
+customers + geo_lookup → customer_features
+sellers + geo_lookup → seller_features
+products cleaned       → product_features
+
+order_items
+    + seller_features
+    + product_features
+        ↓
+order_items_enriched
+        ↓
+distance calculation
+        ↓
+aggregate by order_id
+        ↓
+order_level_features
+        ↓
+orders filtered/cleaned
+    + customer_features
+    + order_level_features
+        ↓
+
+FINAL ML DATASET
+(1 ROW = 1 ORDER)
 ---
 
 # Exploratory Data Analysis (EDA)
