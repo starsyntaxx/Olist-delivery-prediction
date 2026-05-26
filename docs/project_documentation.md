@@ -263,6 +263,7 @@ The project analyzed:
 - Geographic seller distribution  
 
 # Aggregation Workflow
+```text
 geolocation
     ↓
 clean geolocation lookup
@@ -291,7 +292,7 @@ orders filtered/cleaned
 
 FINAL ML DATASET
 (1 ROW = 1 ORDER)
----
+```
 
 # Exploratory Data Analysis (EDA)
 
